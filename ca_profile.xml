@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<CommunityApplications>
+  <Profile>
+Tools that keep an Unraid media server tidy and running smoothly alongside Radarr, Sonarr and Jellyfin.
+
+**Dubarr** removes audio and subtitle tracks in languages you don't want, keeps the best track in the ones you do, and flags files with no audio in your language. It starts in report-only mode, keeps every original in a recycle folder with one-click restore, and waits for torrents to finish seeding.
+
+**Evictarr** keeps your download clients clean. It removes imported, stalled and failed downloads, blocks releases containing malware or files you don't want and searches for replacements, and can skip samples and subtitles or audio that aren't in your languages. It works with qBittorrent, RDTClient, Deluge, Transmission and SABnzbd. Evictarr is a maintained fork of [Purgarr](https://github.com/steveharsant/purgarr) by Steve Harsant.
+
+Both are set up in a web UI. For support, please open an issue on GitHub: [Dubarr](https://github.com/p1zzm1ssile/Dubarr/issues) or [Evictarr](https://github.com/p1zzm1ssile/Evictarr/issues).
+  </Profile>
+  <Icon>https://avatars.githubusercontent.com/u/336739941?v=4</Icon>
+  <WebPage>https://github.com/p1zzm1ssile/unraid-templates</WebPage>
+</CommunityApplications>
