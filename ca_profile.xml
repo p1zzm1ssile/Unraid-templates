@@ -7,7 +7,11 @@ Tools that keep an Unraid media server tidy and running smoothly alongside Radar
 
 **Evictarr** keeps your download clients clean. It removes imported, stalled and failed downloads, blocks releases containing malware or files you don't want and searches for replacements, and can skip samples and subtitles or audio that aren't in your languages. It works with qBittorrent, RDTClient, Deluge, Transmission and SABnzbd. Evictarr is a maintained fork of [Purgarr](https://github.com/steveharsant/purgarr) by Steve Harsant.
 
-Both are set up in a web UI. For support, please open an issue on GitHub: [Dubarr](https://github.com/p1zzm1ssile/Dubarr/issues) or [Evictarr](https://github.com/p1zzm1ssile/Evictarr/issues).
+**Setuparr** checks your Sonarr, Radarr, Prowlarr, Seerr, Jellyfin and Plex setup against the TRaSH guides, including Unraid folder mappings, tags and anime, and fixes what doesn't match with one button or shows you how. It only reads the Unraid files you upload, rather than scanning your server.
+
+**Duplicatearr** finds the same film, episode, poster or extra stored more than once in your library, even when the copies are different encodes, and helps you keep the best one.
+
+All are set up in a web UI. For support, please open an issue on GitHub: [Dubarr](https://github.com/p1zzm1ssile/Dubarr/issues), [Evictarr](https://github.com/p1zzm1ssile/Evictarr/issues), [Setuparr](https://github.com/p1zzm1ssile/Setuparr/issues) or [Duplicatearr](https://github.com/p1zzm1ssile/Duplicatearr/issues).
   </Profile>
   <Icon>https://avatars.githubusercontent.com/u/336739941?v=4</Icon>
   <WebPage>https://github.com/p1zzm1ssile/unraid-templates</WebPage>
