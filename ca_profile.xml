@@ -11,7 +11,9 @@ Tools that keep an Unraid media server tidy and running smoothly alongside Radar
 
 **Duplicatearr** finds the same film, episode, poster or extra stored more than once in your library, even when the copies are different encodes, and helps you keep the best one.
 
-All are set up in a web UI. For support, please open an issue on GitHub: [Dubarr](https://github.com/p1zzm1ssile/Dubarr/issues), [Evictarr](https://github.com/p1zzm1ssile/Evictarr/issues), [Setuparr](https://github.com/p1zzm1ssile/Setuparr/issues) or [Duplicatearr](https://github.com/p1zzm1ssile/Duplicatearr/issues). For anything private, email [p1zzm1ssilerepo@gmail.com](mailto:p1zzm1ssilerepo@gmail.com).
+**Library Cover Maker** makes animated cover art for your Jellyfin libraries from up to 5 videos or pictures. It runs in your browser, so your videos are never uploaded.
+
+All are set up in a web UI. For support, please open an issue on GitHub: [Dubarr](https://github.com/p1zzm1ssile/Dubarr/issues), [Evictarr](https://github.com/p1zzm1ssile/Evictarr/issues), [Setuparr](https://github.com/p1zzm1ssile/Setuparr/issues), [Duplicatearr](https://github.com/p1zzm1ssile/Duplicatearr/issues) or [Library Cover Maker](https://github.com/p1zzm1ssile/Library-Cover-Maker/issues). For anything private, email [p1zzm1ssilerepo@gmail.com](mailto:p1zzm1ssilerepo@gmail.com).
   </Profile>
   <Icon>https://avatars.githubusercontent.com/u/336739941?v=4</Icon>
   <WebPage>https://github.com/p1zzm1ssile/unraid-templates</WebPage>
