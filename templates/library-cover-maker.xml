@@ -9,10 +9,12 @@
   <Support>https://github.com/p1zzm1ssile/Library-Cover-Maker/issues</Support>
   <TemplateURL>https://raw.githubusercontent.com/p1zzm1ssile/unraid-templates/main/templates/library-cover-maker.xml</TemplateURL>
   <Project>https://github.com/p1zzm1ssile/Library-Cover-Maker</Project>
-  <Overview>Makes animated cover art for your Jellyfin libraries. Add up to 5 videos or pictures, type the library name, and download an animated WebP that cuts between random moments from each, with a frame and the name in a big serif font. Everything runs in your browser, so your videos are never uploaded. No folders to map.</Overview>
+  <Overview>Makes animated cover art for your Jellyfin libraries. Add up to 5 videos or pictures, type the library name, and download an animated WebP that cuts between random moments from each, with a frame and the name in a big serif font. Pick files from your computer or straight from your media folders on the server. The covers are made in your browser, and nothing is sent anywhere else.</Overview>
   <Category>MediaApp:Video Tools:</Category>
   <WebUI>http://[IP]:[PORT:8097]/</WebUI>
   <Icon>https://raw.githubusercontent.com/p1zzm1ssile/Library-Cover-Maker/main/web/icon.png</Icon>
   <ExtraParams/>
-  <Config Name="Web UI port" Target="80" Default="8097" Mode="tcp" Description="Port for the Library Cover Maker web page. Jellyfin uses 8096, so the default is 8097." Type="Port" Display="always" Required="true" Mask="false">8097</Config>
+  <Config Name="WebUI" Target="8097" Default="8097" Mode="tcp" Description="Port for the Library Cover Maker web UI. Jellyfin uses 8096, so the default is 8097." Type="Port" Display="always" Required="true" Mask="false">8097</Config>
+  <Config Name="Media" Target="/media" Default="/mnt/user/data/media" Mode="ro" Description="Your media folder, read-only. The web UI's Server media button lets you pick videos and pictures from here. Use the same folder Jellyfin uses." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/media</Config>
+  <Config Name="Extra media" Target="/media/extra" Default="" Mode="ro" Description="Optional second folder, read-only. Shows up as a folder called extra in Server media." Type="Path" Display="always" Required="false" Mask="false"></Config>
 </Container>
