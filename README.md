@@ -10,6 +10,7 @@ Unraid Community Applications templates for my apps:
 | **Duplicatearr** | Finds the same film, episode, poster or extra stored more than once, even as different encodes | [p1zzm1ssile/Duplicatearr](https://github.com/p1zzm1ssile/Duplicatearr) |
 | **Library Cover Maker** | Makes animated cover art for your Jellyfin libraries | [p1zzm1ssile/Library-Cover-Maker](https://github.com/p1zzm1ssile/Library-Cover-Maker) |
 | **Investigatarr** | Checks your Unraid server's security and gives it a score out of 100, with a fix for every finding | [p1zzm1ssile/Investigatarr](https://github.com/p1zzm1ssile/Investigatarr) |
+| **Notifyarr** | Alerts you on Telegram or email when your containers or Unraid server need attention | [p1zzm1ssile/Notifyarr](https://github.com/p1zzm1ssile/Notifyarr) |
 
 This repository only holds the Unraid templates (`templates/`) and the Community Applications profile (`ca_profile.xml`). Each app's code, Docker image and licence live in its own repository.
 
