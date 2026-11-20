@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>narrator</Name>
+  <Repository>ghcr.io/p1zzm1ssile/narrator:latest</Repository>
+  <Registry>https://github.com/p1zzm1ssile/Narrator/pkgs/container/narrator</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/p1zzm1ssile/Narrator/issues</Support>
+  <TemplateURL>https://raw.githubusercontent.com/p1zzm1ssile/unraid-templates/main/templates/narrator.xml</TemplateURL>
+  <Project>https://github.com/p1zzm1ssile/Narrator</Project>
+  <Overview>Turns stories into audiobooks read by a cast of expressive voices. Upload a story and your own Ollama works out who says each line and how they feel. Chatterbox, running on your NVIDIA GPU inside this container, acts each line out in that character's voice, and can copy a voice from a short clip. Your Kokoro-FastAPI can be used for fast voices and as a fallback. Whisper listens back to every line and re-renders any that come out garbled. You get an M4B audiobook with chapters, or an MP3. Listen to every voice and pick your cast in the web UI. Needs the Nvidia Driver plugin. Free forever: no paid tiers, no Pro account, no subscriptions.</Overview>
+  <Category>MediaApp:Books MediaServer:Books Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9895]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/p1zzm1ssile/Narrator/main/src/web/icon.png</Icon>
+  <ExtraParams>--runtime=nvidia</ExtraParams>
+  <Config Name="Web UI port" Target="9895" Default="9895" Mode="tcp" Description="Port for the Narrator web UI" Type="Port" Display="always" Required="true" Mask="false">9895</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/narrator" Mode="rw" Description="Settings, your voices, stories, finished audiobooks and the downloaded voice models (about 4 GB, downloaded the first time a voice is used)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/narrator</Config>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="all" Mode="" Description="Which GPU to use. 'all', or your GPU's UUID from the Nvidia Driver plugin page if you have more than one." Type="Variable" Display="always" Required="true" Mask="false">all</Config>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="compute,utility" Mode="" Description="Leave as compute,utility" Type="Variable" Display="advanced" Required="true" Mask="false">compute,utility</Config>
+  <Config Name="Ollama address" Target="OLLAMA_URL" Default="" Mode="" Description="Optional. Your Ollama, e.g. http://192.168.1.10:11434. It works out who says each line and how they feel. Without it, speakers are guessed from the text. Can also be set later in the web UI." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Ollama model" Target="OLLAMA_MODEL" Default="qwen2.5:7b" Mode="" Description="The Ollama model to use. Pull it in Ollama first (ollama pull qwen2.5:7b)." Type="Variable" Display="always" Required="false" Mask="false">qwen2.5:7b</Config>
+  <Config Name="Kokoro address" Target="KOKORO_URL" Default="" Mode="" Description="Optional. Your Kokoro-FastAPI, e.g. http://192.168.1.10:8880. Its voices appear in the web UI next to the Chatterbox ones." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Whisper check" Target="WHISPER_MODE" Default="builtin" Mode="" Description="builtin (listens back on the CPU inside this container), external (your whisper-asr-webservice, set its address in the web UI) or off" Type="Variable" Display="advanced" Required="false" Mask="false">builtin</Config>
+  <Config Name="Web UI password" Target="WEB_PASSWORD" Default="" Mode="" Description="Optional. Ask for this password in the browser and the API (any user name)." Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+</Container>
